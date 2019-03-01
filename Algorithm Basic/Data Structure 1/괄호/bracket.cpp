@@ -7,29 +7,29 @@ using namespace std;
 void pirntIsVPS(string _input)
 {
 	stack<int> st;
-	for(int j=0; j<_input.size(); j++)
+	for (int j = 0; j < _input.size(); j++)
 	{
-			if(_input[j]=='(')
+		if (_input[j] == '(')
+		{
+			st.push(_input[j]);
+		}
+		else
+		{
+			if (st.size() == 0)
 			{
-				st.push(_input[j]);
+				cout << "NO" << endl;
+				return;
 			}
 			else
 			{
-				if(st.size()==0)
-				{
-					cout << "NO" << endl;
-					return;
-				}
-				else
-				{
-					st.pop();
-				}
+				st.pop();
 			}
+		}
 	}
-		if(st.size()>0)
-			cout << "NO" << endl;
-		else if(st.empty())
-			cout << "YES" << endl;
+	if (st.size() > 0)
+		cout << "NO" << endl;
+	else if (st.empty())
+		cout << "YES" << endl;
 }
 
 int main()
@@ -37,8 +37,8 @@ int main()
 	int cnt;
 	cin >> cnt;
 	string input;
-	
-	for(int i=0; i<cnt; i++)
+
+	for (int i = 0; i < cnt; i++)
 	{
 		cin >> input;
 		pirntIsVPS(input);
