@@ -1,1 +1,1 @@
-[문제 링크 (Problem)]()
+[문제 링크 (Problem)](https://www.acmicpc.net/problem/10430)
