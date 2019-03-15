@@ -14,7 +14,7 @@ public:
     }
 };
 
-bool compare(XY a, XY b)
+bool compare(const XY &a, const XY &b)
 {
     if(a.x == b.x)
         return a.y < b.y;

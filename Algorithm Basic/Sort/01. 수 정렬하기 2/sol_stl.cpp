@@ -6,7 +6,7 @@ int main()
 {
     int inputCnt;
     scanf("%d", &inputCnt);
-    int arr[inputCnt];
+    int *arr = new int[inputCnt];
     for(int i=0; i<inputCnt; i++)
     {
         scanf("%d", &arr[i]);

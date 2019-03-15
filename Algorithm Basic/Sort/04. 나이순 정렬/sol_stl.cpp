@@ -19,7 +19,7 @@ class User
     }
 };
 
-bool compare(User a, User b)
+bool compare(const User &a, const User &b)
 {
     if (a.age == b.age)
     {

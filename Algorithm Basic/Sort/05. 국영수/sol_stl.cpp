@@ -21,7 +21,7 @@ class Student
     }
 };
 
-bool compare(Student a, Student b)
+bool compare(const Student &a, const Student &b)
 {
     if (a.scoreKorean == b.scoreKorean && a.scoreEng == b.scoreEng && a.scoreMath == b.scoreMath)
         return a.name < b.name;
