@@ -33,7 +33,7 @@ void cntIsland(int i, int j)
         cntIsland(i + 1, j);
     if (j + 1 < w && !isVisit[i][j + 1]) // 오른쪽
         cntIsland(i, j + 1);
-    if (j - 1 >= 0 && !isVisit[i][j - 1])
+    if (j - 1 >= 0 && !isVisit[i][j - 1]) // 왼쪽
         cntIsland(i, j - 1);
     if (i + 1 < h && j + 1 < w && !isVisit[i + 1][j + 1]) // 우하단
         cntIsland(i + 1, j + 1);
@@ -41,7 +41,7 @@ void cntIsland(int i, int j)
         cntIsland(i + 1, j - 1);
     if (i - 1 >= 0 && j + 1 < w && !isVisit[i - 1][j + 1]) // 우상단
         cntIsland(i - 1, j + 1);
-    if (i - 1 >= 0 && j - 1 >= 0 && !isVisit[i - 1][j - 1])
+    if (i - 1 >= 0 && j - 1 >= 0 && !isVisit[i - 1][j - 1]) // 좌상단
         cntIsland(i - 1, j - 1);
 }
 
