@@ -1,2 +1,3 @@
+Algorithm Basic/Sort/ 09. 버블 소트
 Algorithm Imediate1/Exaustive Search/05. 순열의 순서
 Algorithm Imediate1/Greedy/02. 회의실배정
